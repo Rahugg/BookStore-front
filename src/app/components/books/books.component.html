@@ -1,0 +1,11 @@
+<div class="py-4 px-6 border rounded flex items-center flex-col mb-2">
+  <h3 class="mb-2 text-md text-center ">Title: <b>{{book.Title}}</b></h3>
+  <p>Price: {{book.Cost}}</p>
+  <div class="rounded flex items-center flex-row space-x-12">
+    <button (click)="openModal(book.ID)" class="two bg-yellow-400 font-bold  px-4 py-4 rounded-lg"> Change</button>
+    <p>Description: {{book.Description}}</p>
+    <button (click)="deleteItem(book.ID)" class="two bg-red-400 font-bold  px-4 py-4 rounded-lg"> Delete</button>
+  </div>
+
+</div>
+
